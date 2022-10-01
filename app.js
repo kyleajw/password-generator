@@ -7,6 +7,7 @@ let password = '';
 document.querySelector('.generate-password').addEventListener('click', generatePassword);
 
 function generatePassword(e) {
+    password = '';
     const passwordLength = document.getElementById('pass-length').value;
     const includeUpper = document.getElementById('include-uppercase').checked;
     const includeLower = document.getElementById('include-lowercase').checked;
