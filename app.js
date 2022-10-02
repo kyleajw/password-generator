@@ -8,7 +8,11 @@ document.querySelector('.generate-password').addEventListener('click', generateP
 
 function generatePassword(e) {
     password = '';
-    const passwordLength = document.getElementById('pass-length').value;
+    let passwordLength = document.getElementById('pass-length').value;
+    // if (passwordLength > document.getElementById('pass-length').max) {
+    //     console.log('exceeded max');
+    //     passwordLength = document.getElementById('pass-length').max;
+    // }
     const includeUpper = document.getElementById('include-uppercase').checked;
     const includeLower = document.getElementById('include-lowercase').checked;
     const includeNumbers = document.getElementById('include-numbers').checked;
